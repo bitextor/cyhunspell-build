@@ -24,6 +24,7 @@ jobs:
         env:
           CYHUNSPELL_FORCE_BUILD: 1
         run: |
+          sudo apt install -y autoconf automake autopoint libtool
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
           pip install -r requirements-test.txt
