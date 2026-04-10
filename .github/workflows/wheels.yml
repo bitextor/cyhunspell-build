@@ -23,7 +23,7 @@ jobs:
           CYHUNSPELL_FORCE_BUILD: "1"
           CIBW_BEFORE_ALL: "dnf install -y autoconf automake gettext gettext-devel libtool"
           #CIBW_MANYLINUX_X86_64_IMAGE: "manylinux_2_28"
-          CIBW_BUILD: "cp31{0,1,2,3}-manylinux_x86_64"
+          CIBW_BUILD: "cp31*"
 
       - uses: actions/upload-artifact@v4
         with:
